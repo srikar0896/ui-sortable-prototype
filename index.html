@@ -16,7 +16,7 @@
 
 <body>
     <div ng-app="sortableApp" ng-controller="sortableController" class="container">
-        <h2>ui.sortable connected lists event order</h2>
+        <h2>Sort and check the rank.(You can drag one option in to another option as well.)</h2>
         <div>
         <div ui-sortable ng-model="rawScreens">
             <div ng-if="rawScreens[$index].length>0" ng-repeat="rawScreen in rawScreens track by $index" ui-sortable="sortableOptions" class="apps-container screen floatleft clear" ng-model="rawScreens[$index]">
